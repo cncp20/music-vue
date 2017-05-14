@@ -1,6 +1,6 @@
 # music
 
-> A V project
+> A VUE project
 
 ## Build Setup
 
