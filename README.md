@@ -1,6 +1,6 @@
 # music
 
-> A Vue.js project
+> A V project
 
 ## Build Setup
 
