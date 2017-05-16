@@ -59,13 +59,13 @@ export default {
     },
     showDetail() {
       this.isDetailShow = true;
-      this.$store.dispatch("changeLyricState");
-      this.$http.jsonp("https://api.darlin.me/music/lyric/" + this.$store.state.song.id + "/")
-        .then((data) => {
-          var str = new base().decode(data.body.lyric);  
-          this.$store.dispatch("setLyric", str);
-          this.$store.dispatch("changeLyricState");
-        })
+      // this.$store.dispatch("changeLyricState");
+      // this.$http.jsonp("https://api.darlin.me/music/lyric/" + this.$store.state.song.id + "/")
+      //   .then((data) => {
+      //     var str = new base().decode(data.body.lyric);  
+      //     this.$store.dispatch("setLyric", str);
+      //     this.$store.dispatch("changeLyricState");
+      //   })
     },
     hideDetail() {
       this.isDetailShow = false;

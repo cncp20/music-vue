@@ -28,7 +28,10 @@ export default {
     this.$store.dispatch("addToDom", this.$refs.audio);
     this.$refs.audio.addEventListener("ended", () => {
       this.$store.dispatch("next");
-    })
+    });
+    this.$refs.audio.addEventListener("durationchange", () => {
+      this.$store.dispatch("setDuration", this.$refs.audio.duration);
+    });
   }
 }
 </script>

@@ -66,6 +66,9 @@ const actions = {
     },
     setCurrTime({commit, state}) {
         commit("setCurrTime",state.audioDom.currentTime);
+    },
+    setDuration({commit, state}, payload) {
+        commit("setDuration",payload);
     }
 }
 

@@ -20,7 +20,6 @@ const mutations = {
         state.song.author = state.playList[index].author;
         state.song.src = state.playList[index].src;
         state.song.musicImgSrc = state.playList[index].musicImgSrc;
-        state.duration = state.audioDom.duration;
     },
     changeSongsList(state, payload) {
         state.songsList = payload;
@@ -52,6 +51,9 @@ const mutations = {
     },
     setCurrTime(state, payload) {
         state.currTime = payload;
+    },
+    setDuration(state, payload) {
+        state.duration = payload;
     }
 }
 
