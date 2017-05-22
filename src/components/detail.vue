@@ -3,7 +3,7 @@
         <img :src="song.musicImgSrc" />
         <p class="detail-title">
             <i class="iconfont icon-bottom" @click="hideSelf()"></i>
-            歌曲
+            {{song.name}}
         </p>
         <!--<div class="lyric">
                     {{isLyricOk ? lyric : "loading..."}}
